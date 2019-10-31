@@ -1,6 +1,6 @@
 #! /bin/bash
-cp run ~/
+cp run.sh ~/
 cp -r my-lab ~/
 cd ~
-CMD="./run"
+CMD="./run.sh"
 $CMD
