@@ -64,5 +64,7 @@ echo -e "\e[92mSome Cleaning is always needed!"
         rm -r dpdk-19.05
         rm dpdk-19.05.tar.xz
         rm pktgen-dpdk-pktgen-19.10.0.tar.gz
+	rm -r my-lab
+	rm run.sh
 
 echo -e "\e[92mGo to \e[93m/home/ubuntu/training/dpdk-container-lab \e[91m& Enjoy!!!"
