@@ -15,7 +15,10 @@ if [ "$DPDK_BUILD" == "" ]; then
 	exit 1
 fi
 
-rm 
+rm build_testpmd.sh
+step06-set_testpmd_dpdk_params.sh
+rm step07-run_testpmd.sh
+
 echo "Building pktgen..."
 export PKTGEN_DIR=/usr/src/pktgen
 cd "$PKTGEN_DIR"
