@@ -31,4 +31,4 @@ fi
 #export DPDK_PARAMS="-c 0x19 --master-lcore 3 -n 1 --single-file -m 512 --file-prefix pktgen --no-pci --vdev=net_virtio_user1,mac=00:00:00:00:00:01,path=/var/run/openvswitch/vhost-user1 --vdev=net_virtio_user2,mac=00:00:00:00:00:02,path=/var/run/openvswitch/vhost-user2"
 
 
-export DPDK_PARAMS="-c 0x19 -n 4 --single-file -m 1024 --file-prefix pktgen -w 0c:00.0 -w 13:00.0"
+export DPDK_PARAMS="-c 0x19 --master-lcore 3 -n 4 --single-file -m 1024 --file-prefix pktgen -w 0c:00.0 -w 13:00.0"
