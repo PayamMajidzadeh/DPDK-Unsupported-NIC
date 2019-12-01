@@ -17,7 +17,8 @@ fi
 #--auto-start: start forwarding packets immediately on launch
 #--disable-hw-vlan: disable hardware VLAN
 #--coremask=0xC0: lock tespmd to run on cores 6-7 (0b1100 0000)
-export L3FWD_PARAMS="-p 3 -P"
+#export L3FWD_PARAMS="-p 3 -P"
+export L3FWD_PARAMS='-p 3 -P -L --config "(0,0,6),(1,0,7)" --parse-ptype --eth-dest=0,00:50:56:A9:38:C4 --eth-dest=1,00:50:56:a9:56:48'
 
 CMD="$DPDK_DIR/examples/l3fwd/build/l3fwd $DPDK_PARAMS -- $L3FWD_PARAMS"
 echo "Running $CMD"
