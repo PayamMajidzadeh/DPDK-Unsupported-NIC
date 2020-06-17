@@ -6,8 +6,8 @@
 
       # the original codes start from here
       apt-get update
-     	apt-get install build-essential automake docker.io linux-headers-$(uname -a | awk '{print $3}') vim kmod python3 python3-pip libtool gcc-multilib libnuma-dev pkg-config libpcap-dev #lua5.3 liblua5.3-dev libpcap0.8-dev clang python3.4 python-pyftpdlib libssl-dev
-	    pip install -U pip six
+     	apt-get install build-essential automake docker.io linux-headers-$(uname -a | awk '{print $3}') vim kmod python3 python3-pip python-six libtool gcc-multilib libnuma-dev pkg-config libpcap-dev #lua5.3 liblua5.3-dev libpcap0.8-dev clang python3.4 python-pyftpdlib libssl-dev
+	    pip3 install -U pip 
 		apt  upgrade
 
     # the original commands was curl -s0 instead of wget, but it had an issue for unarchiving
